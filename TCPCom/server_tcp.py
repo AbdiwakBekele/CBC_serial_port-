@@ -57,14 +57,14 @@ while True:
                 data_buffer += data
 
                 # Decode and process the data
-                data_str = data_buffer.decode('utf-8')
+                data_str = data_buffer
                 print(f"Received raw data:\n{data_str}")
 
                 # Extract CBC parameters
-                cbc_results = parse_cbc_parameters(data_str)
-                print("\nExtracted CBC Parameters:")
-                for param, value in cbc_results.items():
-                    print(f"{param}: {value}")
+                #cbc_results = parse_cbc_parameters(data_str)
+                # print("\nExtracted CBC Parameters:")
+                # for param, value in cbc_results.items():
+                #     print(f"{param}: {value}")
 
             else:
                 break
